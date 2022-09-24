@@ -1,1 +1,1 @@
-# automated_video_feedback_harvester
+# Stream_Clippy_Capturing_Bugs_As_They_Happen
