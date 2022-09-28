@@ -5,7 +5,7 @@ The idea and goal of the Stream Clippy project is to creat a developer service t
 
 Whenever a team ships a new game or release an update, streamers would inevitably find some new bugs. The dev team will sometimes learn about these through either community team coverage or luck of the draw and seeing the stream in person. However, it is just not practical to watch them all with human eyes. We were thinking to create a service analyze the streamer's video and collect the bug videos that were encountered in the wild for dev team!
 
-![stream-clippy](docs/images/stream-clippy.jpg)
+![stream-clippy](docs/images/stream_clippy.jpg)
 ![bug_capture_dashboard](docs/images/bug_capture_dashboard.jpg)
 
 ### Architecture
@@ -28,11 +28,11 @@ We collected 39 streamers videos from Twitch and input to STT to get 508 example
 ### Hacker's log
 Our original hypothesis was that there's a direct correlation between the negative sentiments in a streamer's speech and the occurance of a bug in the game. We tested this hypothesis quickly with a sentiment analysis model (v1) and got back very promising results. We then trained our own BERT based logistic regression classifier (v2) with even better performance.
 
-Recall = TP/ (TP + FN) (How many relevant items are selected?)
+`Recall = TP/ (TP + FN)` (How many relevant items are selected?)
 v1: 33.30%
 v2: 100.00%
 
-Precision = TP/ (TP + FP) (How many selected items are relevant?)
+`Precision = TP/ (TP + FP)` (How many selected items are relevant?)
 v1: 16.66%
 v2: 21.43%
 
