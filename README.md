@@ -29,12 +29,12 @@ We collected 39 streamers videos from Twitch and input to STT to get 508 example
 Our original hypothesis was that there's a direct correlation between the negative sentiments in a streamer's speech and the occurance of a bug in the game. We tested this hypothesis quickly with a sentiment analysis model (v1) and got back very promising results. We then trained our own BERT based logistic regression classifier (v2) with even better performance.
 
 `Recall = TP/ (TP + FN)` (How many relevant items are selected?)
-v1: 33.30%
-v2: 100.00%
+
+v1: 33.30% -> v2: 100.00%
 
 `Precision = TP/ (TP + FP)` (How many selected items are relevant?)
-v1: 16.66%
-v2: 21.43%
+
+v1: 16.66% -> v2: 21.43%
 
 Compared to v1, v2's recall improved significantly. While the precision may seem low for general machine learning use cases, in our scenario, the cost of processing false positive sample of 20-second-clips is relatively low. On the other hand, the high recall is very important for us. Making sure we don't miss any bugs.
 
