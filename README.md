@@ -5,8 +5,8 @@ The idea and goal of the Stream Clippy project is to creat a developer service t
 
 Whenever a team ships a new game or release an update, streamers would inevitably find some new bugs. The dev team will sometimes learn about these through either community team coverage or luck of the draw and seeing the stream in person. However, it is just not practical to watch them all with human eyes. We were thinking to create a service analyze the streamer's video and collect the bug videos that were encountered in the wild for dev team!
 
-![stream-clippy](docs/images/stream-clippy.png)
-![bug_capture_dashboard](docs/images/bug_capture_dashboard.png)
+![stream-clippy](docs/images/stream-clippy.jpg)
+![bug_capture_dashboard](docs/images/bug_capture_dashboard.jpg)
 
 ### Architecture
 ![Architecture](docs/images/nlp-architecture.png)
